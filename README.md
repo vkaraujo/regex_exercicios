@@ -1,23 +1,28 @@
 
 ## Anagrams
 
-Implement a method #anagrams?(a_string, another_string) that check whether or not two strings are anagrams (returning a boolean).
+Implemente um método #anagrams?(a_string, another_string) que cheque se duas strings são anagramas (retornando um boolean).
 
 
 ## Check Phone
 
-Write a method `phone_number?` that takes a string as parameter and returns a boolean `true` when the phone number is a valid RJ phone number with DDD, `false` otherwise:
-- It is also valid when starting with `+21` and containing 11 digits. And the digit following the `+21` cannot be a 0.
+Implemente o método `phone_number?` que recebe um string e retorne um boolean `true` se um numero de telefone for válido, `false` se não for:
+- O numero também é válido se tiver 9 dígitos, como de um celular
+- O numero também é válido se tiver 10 ou 11 dígitos, se começar com `+21`
 
-The method should ignore spaces or dashes between digits.
+O método deve ignorar espaços em branco ou hifens entre os dígitos.
 
 
 ## Word Frequency
-Implement `most_common_words` that returns the number of occurrences of most frequent words in a text file. For instance, if we take the bible as source text:
+Implemente um método `most_common_words` que retorne o número de ocorrências das palavras mais frequentes dentro de um arquivo txt em inglês.
 
+Por exemplo, se a biblia for o texto:
 ```ruby
 most_common_words('source-text.txt', 'stop_words.txt', 3)
 #=> { 'lord' => 8722, 'God' => 7380, 'Jesus' => 2617 }
 ```
 
-NOTE: Please ignore punctuation
+NOTE: Ignore pontuação. (exemplo: Mike's deve contar como Mike na contagem final.)
+
+Adicione um filtro ao seu método para se livrar de stop words (exemplo: "a", "the", "is" etc.). O arquivo "stop_words.txt" foi adicionado para esse fim.
+
