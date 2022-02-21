@@ -3,7 +3,7 @@ require "check_phone"
 describe "#phone_number?" do
   FIXTURES = {
     "21993244202" => true,
-    "2185243702" => true,
+    "993244202" => true,
     "21 9 85 24 37 02" => true,
     "(21)9-8524-3702" => true,
     "+21 9 85 24 37 02" => true,
